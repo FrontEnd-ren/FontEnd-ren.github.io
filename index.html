@@ -1,1 +1,105 @@
-<h1>testPage</h1>
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://idcard.shuhaisc.com/?lang=zh-CN&open_in_browser=true -->
+<html lang="en" data-theme="light" class=" ">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="The basic Vue3 template for Mobile、PC、IPad, use easy and efficiency.">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <link rel="icon" href="https://idcard.shuhaisc.com/favicon.ico">
+  <title>员工身份核验</title>
+  <!-- 引入 JSSDK -->
+  <link rel="stylesheet" href="./files/style.eb88988a.css">
+  <script src="./files/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script
+    type="module">try { import.meta.url; import("_").catch(() => 1); } catch (e) { } window.__vite_is_modern_browser = true;</script>
+  <script
+    type="module">!function () { if (window.__vite_is_modern_browser) return; console.warn("vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored"); var e = document.getElementById("vite-legacy-polyfill"), n = document.createElement("script"); n.src = e.src, n.onload = function () { System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src')) }, document.body.appendChild(n) }();</script>
+</head>
+
+<body class="van-theme-light">
+  <div id="app" data-v-app="">
+    <div class="van-config-provider">
+      <div class="id-card-container" data-v-b80fbaea="">
+        <div class="id-card-content" data-v-b80fbaea="">
+          <div class="id-card-tip" data-v-b80fbaea=""></div>
+          <div class="van-image title" data-v-b80fbaea=""><img src="./files/title.2x.d12a7c3e.png"
+              class="van-image__img" style="object-fit: cover;"><!----><!----></div>
+          <div class="crile-container" data-v-b80fbaea="">
+            <div class="crile-content" data-v-b80fbaea="">
+              <ul data-v-b80fbaea="">
+                <li data-v-b80fbaea=""></li>
+                <li data-v-b80fbaea=""></li>
+                <li data-v-b80fbaea=""></li>
+                <li data-v-b80fbaea=""></li>
+                <li data-v-b80fbaea=""></li>
+                <li data-v-b80fbaea=""></li>
+                <li data-v-b80fbaea=""></li>
+                <li data-v-b80fbaea=""></li>
+                <li data-v-b80fbaea=""></li>
+                <li data-v-b80fbaea=""></li>
+              </ul>
+              <div class="van-image van-image--round user-image" data-v-b80fbaea=""><img
+                  src="./files/user.2x.d31f7080.png" class="van-image__img"><!----><!----></div>
+            </div>
+          </div>
+          <div class="date item-center" data-v-b80fbaea="">{{ date }}</div>
+          <div class="time item-center" data-v-b80fbaea="">{{ time }}</div>
+          <div class="user-message" data-v-b80fbaea="">
+            <div class="user-message-item" data-v-b80fbaea=""><span class="user-message-title"
+                data-v-b80fbaea="">姓名</span>
+              <div class="user-message-info" data-v-b80fbaea="">任鹏元</div>
+            </div>
+            <div class="user-message-item" data-v-b80fbaea=""><span class="user-message-title"
+                data-v-b80fbaea="">工号</span>
+              <div class="user-message-info" data-v-b80fbaea="">10533606</div>
+            </div>
+            <div class="user-message-item" data-v-b80fbaea=""><span class="user-message-title"
+                data-v-b80fbaea="">部门</span>
+              <div class="user-message-info" data-v-b80fbaea="">前端四组</div>
+            </div>
+            <div class="user-message-item" data-v-b80fbaea=""><span class="user-message-title"
+                data-v-b80fbaea="">职务</span>
+              <div class="user-message-info" data-v-b80fbaea="">前端开发工程师</div>
+            </div>
+            <div class="user-message-item" data-v-b80fbaea=""><span class="user-message-title"
+                data-v-b80fbaea="">性别</span>
+              <div class="user-message-info" data-v-b80fbaea="">
+                <img src="./files/gender.png" style="width: 40px;" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script
+    nomodule="">!function () { var e = document, t = e.createElement("script"); if (!("noModule" in t) && "onbeforeload" in t) { var n = !1; e.addEventListener("beforeload", (function (e) { if (e.target === t) n = !0; else if (!e.target.hasAttribute("nomodule") || !n) return; e.preventDefault() }), !0), t.type = "module", t.src = ".", e.head.appendChild(t), t.remove() } }();</script>
+  <script nomodule="" crossorigin="" id="vite-legacy-polyfill"
+    src="./files/polyfills-legacy.3e7af057.js"></script>
+  <script nomodule="" crossorigin="" id="vite-legacy-entry"
+    data-src="/assets/index-legacy.6eeb5bba.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        date: '',
+        time: ''
+      },
+      mounted() {
+        setInterval(()=> {
+          this.date = dayjs(new Date()).format('YYYY年MM月DD日')
+          this.time = dayjs(new Date()).format('HH:mm:ss')
+        }, 1000)
+      },
+    })
+  </script>
+
+</body>
+
+</html>
